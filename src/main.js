@@ -129,13 +129,14 @@ loadDemoBtn.addEventListener("click", () => {
 
 loadUrlBtn.addEventListener("click", async () => {
   try {
-    await app.loadGLBUrl("/models/demo.glb");
+    const url = publicUrl("models/demo.glb");
+    await app.loadGLBUrl(url);
     detailsUI.clear();
     sideTabs.setActive("analysis");
-    setHud("已请求：/models/demo.glb（若 404，请将文件放到 public/models/demo.glb）");
+    setHud(`已请求：${url}（若 404，请将文件放到 public/models/demo.glb）`);
   } catch (err) {
     console.error(err);
-    setHud("加载失败：可能是 /models/demo.glb 不存在，或网络/解码器问题。");
+    setHud("加载失败：可能是 demo.glb 不存在，或网络/解码器问题。");
   }
 });
 
