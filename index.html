@@ -9,16 +9,14 @@
   <body>
     <header class="topbar">
       <div class="title">
-        <div class="h1">历史街区成果展示模板</div>
-        <div class="sub">模型 · 分析（可扩展） · 细节介绍（点击模型部件）</div>
+        <div class="h1">钓鱼台课程设计研究</div>
+        <div class="sub">模型预览 · 分析图纸 · 细节介绍</div>
       </div>
       <div class="actions">
-        <label class="btn">
-          导入 .glb
-          <input id="file" type="file" accept=".glb,model/gltf-binary" />
-        </label>
-        <button id="load-demo" class="btn" type="button">加载示例：简易建筑</button>
-        <button id="load-url" class="btn" type="button" title="从 public/models 加载">加载 /models/demo.glb</button>
+        <span class="model-badge" aria-label="当前展示模型">钓鱼台+荷花塘-愚园</span>
+        <button id="toggle-edge" class="btn" type="button" title="切换边缘加粗">边缘：关</button>
+        <button id="toggle-sun" class="btn" type="button" title="切换太阳">太阳：开</button>
+        <button id="toggle-shadow" class="btn" type="button" title="切换阴影与 AO">阴影：开</button>
         <button id="reset" class="btn" type="button">重置</button>
       </div>
     </header>
@@ -27,6 +25,7 @@
       <section class="viewer" aria-label="3D 模型展示区">
         <canvas id="gl"></canvas>
         <div class="viewer-hint" aria-hidden="true">右键旋转 · 中键平移 · 滚轮缩放 · 左键点击部件</div>
+        <div id="camera-pos" class="camera-pos" aria-hidden="true"></div>
         <div id="hud" class="hud" aria-live="polite"></div>
       </section>
 

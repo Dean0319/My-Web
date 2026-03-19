@@ -6,27 +6,8 @@
 import { publicUrl } from "../utils/publicUrl.js";
 
 export const ppt0305ImageMap = [
-  // 区位/总体结构（示例：节点-连线、密度、周边用地、总体策略）
-  {
-    src: publicUrl("showcase/ppt-0305/image1.png"),
-    alt: "场地与节点连线（示例）",
-    topicId: "location",
-    caption: "区位关系/节点串联的图示表达方式",
-  },
-  {
-    src: publicUrl("showcase/ppt-0305/image17.jpeg"),
-    alt: "人群密度、周边用地、交通（示例）",
-    topicId: "location",
-    caption: "用‘密度圈层 + 周边功能泡泡 + 道路结构’讲清楚区位",
-  },
-  {
-    src: publicUrl("showcase/ppt-0305/image9.png"),
-    alt: "空间策略/站城理念（示例）",
-    topicId: "location",
-    caption: "用多张小图归纳‘总体策略/导则’（如：空间、功能、交通协同）",
-  },
 
-  // 历史与遗产
+   // 历史与遗产
   {
     src: publicUrl("showcase/ppt-0305/image2.png"),
     alt: "历史沿革时间轴（示例）",
@@ -46,7 +27,7 @@ export const ppt0305ImageMap = [
     caption: "把街巷骨架与保护要点叠加到同一底图",
   },
 
-  // 交通与慢行
+    // 交通与慢行
   {
     src: publicUrl("showcase/ppt-0305/image5.jpeg"),
     alt: "道路交通系统规划（示例）",
@@ -72,11 +53,34 @@ export const ppt0305ImageMap = [
     caption: "用游线 + 视线/界面剖析强化‘走的体验’",
   },
 
-  // 开敞空间
+  
+  // 开敞空间系统（示例：节点-连线、密度、周边用地、总体策略）
+  {
+    src: publicUrl("showcase/ppt-0305/image10.png"),
+    alt: "场地与节点连线（示例）",
+    topicId: "openspace",
+    caption: "区位关系/节点串联的图示表达方式",
+  },
   {
     src: publicUrl("showcase/ppt-0305/image8.png"),
+    alt: "人群密度、周边用地、交通（示例）",
+    topicId: "openspace",
+    caption: "用‘密度圈层 + 周边功能泡泡 + 道路结构’讲清楚区位",
+  },
+  {
+    src: publicUrl("showcase/ppt-0305/image9.png"),
+    alt: "空间策略/站城理念（示例）",
+    topicId: "openspace",
+    caption: "用多张小图归纳‘总体策略/导则’（如：空间、功能、交通协同）",
+  },
+
+
+
+  // 功能系统
+  {
+    src: publicUrl("showcase/ppt-0305/image18.png"),
     alt: "周边公共绿地与连通（示例）",
-    topicId: "open-space",
+    topicId: "function",
     caption: "用距离/半径表达公共绿地覆盖与短板",
   },
 
